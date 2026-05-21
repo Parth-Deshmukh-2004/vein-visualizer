@@ -51,43 +51,43 @@ To overcome this physical barrier, this project introduces a **distributed MLOps
 └── README.md              
 ```
 
-# Check Installed Core Version:
+## Check Installed Core Version:
 Bash
-rpicam-hello --version
-
-# Verify Physical Sensor Connection:
+**rpicam-hello --version**
+Verify Physical Sensor Connection:
 Bash
-# Verify kernel/OS hardware detection
+Verify kernel/OS hardware detection
 vcgencmd get_camera
-# (Expected output validation: supported=1 detected=1)
+(Expected output validation: supported=1 detected=1)
 
-# List connected cameras and resolution formats
-rpicam-still --list-cameras
+## List connected cameras and resolution formats
+**rpicam-still --list-cameras**
 
-# Enumerate standard V4L2 hardware device nodes
+Enumerate standard V4L2 hardware device nodes
 v4l2-ctl --list-devices
 
-# Reinstallation Commands:
+## Reinstallation Commands:
 If you need to install or update the native stack onto a clean Raspberry Pi OS image:
 
 Bash
-# Synchronize package indices
-sudo apt update
+Synchronize package indices
+**sudo apt update**
 
-# Install the full rpicam-apps application suite
-sudo apt install rpicam-apps -y
+Install the full rpicam-apps application suite
+**sudo apt install rpicam-apps -y**
 
-# Install the supplementary backend development libraries
+Install the supplementary backend development libraries
 sudo apt install libcamera-dev libcamera-apps-dev -y
-# Validated Test Routines
+
+## Validated Test Routines
 Run these manual commands to confirm your physical camera node is perfectly calibrated before initiating the remote AI communication thread:
 
 Bash
-# 1. Take a static target test photograph
-rpicam-still -o test.jpg
+1. Take a static target test photograph
+**rpicam-still -o test.jpg**
 
-# 2. View a live 5-second optical preview stream window
-rpicam-hello
+2. View a live 5-second optical preview stream window
+**rpicam-hello**
 
-# 3. Record an uncompressed short evaluation video clip
-rpicam-vid -t 5000 -o video.h264
+S3. Record an uncompressed short evaluation video clip
+**rpicam-vid -t 5000 -o video.h264**
