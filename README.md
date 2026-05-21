@@ -71,23 +71,23 @@ If you need to install or update the native stack onto a clean Raspberry Pi OS i
 
 Bash
 Synchronize package indices
-**sudo apt update**
+"**sudo apt update**"
 
 Install the full rpicam-apps application suite
-**sudo apt install rpicam-apps -y**
+"**sudo apt install rpicam-apps -y**"
 
 Install the supplementary backend development libraries
-sudo apt install libcamera-dev libcamera-apps-dev -y
+"**sudo apt install libcamera-dev libcamera-apps-dev -y**"
 
 ## Validated Test Routines
 Run these manual commands to confirm your physical camera node is perfectly calibrated before initiating the remote AI communication thread:
 
 Bash
 1. Take a static target test photograph
-**rpicam-still -o test.jpg**
+"**rpicam-still -o test.jpg**"
 
 2. View a live 5-second optical preview stream window
-**rpicam-hello**
+"**rpicam-hello**"
 
-S3. Record an uncompressed short evaluation video clip
-**rpicam-vid -t 5000 -o video.h264**
+3. Record an uncompressed short evaluation video clip
+"**rpicam-vid -t 5000 -o video.h264**"
