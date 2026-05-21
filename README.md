@@ -1,10 +1,10 @@
-# 🩺 AI-Powered Near-Infrared (NIR) Vein Visualization System
+# AI-Powered Near-Infrared (NIR) Vein Visualization System
 
 An affordable, edge-to-cloud diagnostic tool designed to address difficult intravenous access (DIVA) in pediatric, geriatric, and obese patients. By shifting from classical mathematical image filtering to a Deep Learning computer vision model, this system maps subcutaneous venous networks in real time without overheating local hardware.
 
 ---
 
-## 🚀 Key Innovation: Distributed AI Architecture
+## Key Innovation: Distributed AI Architecture
 Standard edge hardware like the **Raspberry Pi Zero 2 W** triggers aggressive thermal throttling (dropping processing speed significantly) when trying to run computer vision networks locally at high frame rates. 
 
 To overcome this physical barrier, this project introduces a **distributed MLOps pipeline**:
@@ -15,7 +15,7 @@ To overcome this physical barrier, this project introduces a **distributed MLOps
 
 ---
 
-## 🛠️ System Components & Tech Stack
+## System Components & Tech Stack
 
 ### Hardware (Edge Node)
 * **Processing Unit:** Raspberry Pi Zero 2 W (Quad-core 64-bit ARM Cortex-A53 @ 1GHz)
@@ -31,7 +31,7 @@ To overcome this physical barrier, this project introduces a **distributed MLOps
 
 ---
 
-## 📊 Performance Benchmarks
+## Performance Benchmarks
 | Metric | Local Processing (Filters) | Cloud-Offloaded AI (This Project) |
 | :--- | :--- | :--- |
 | **Model/Detection Precision** | ~64% (Failed on deep tissue) | **92.4%** (Robust across diverse skin profiles) |
@@ -40,7 +40,7 @@ To overcome this physical barrier, this project introduces a **distributed MLOps
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 ```text
 ├── hardware/              # 3D chassis design models (.STL) and schematic wiring layouts
 ├── edge_node/             # Scripts running on the Raspberry Pi Zero 2 W
