@@ -51,11 +51,11 @@ To overcome this physical barrier, this project introduces a **distributed MLOps
 └── README.md              
 ```
 
-## Check Installed Core Version:
+# Check Installed Core Version:
 Bash
 rpicam-hello --version
 
-## Verify Physical Sensor Connection:
+# Verify Physical Sensor Connection:
 Bash
 # Verify kernel/OS hardware detection
 vcgencmd get_camera
@@ -67,7 +67,7 @@ rpicam-still --list-cameras
 # Enumerate standard V4L2 hardware device nodes
 v4l2-ctl --list-devices
 
-## Reinstallation Commands:
+# Reinstallation Commands:
 If you need to install or update the native stack onto a clean Raspberry Pi OS image:
 
 Bash
@@ -79,7 +79,7 @@ sudo apt install rpicam-apps -y
 
 # Install the supplementary backend development libraries
 sudo apt install libcamera-dev libcamera-apps-dev -y
-## Validated Test Routines
+# Validated Test Routines
 Run these manual commands to confirm your physical camera node is perfectly calibrated before initiating the remote AI communication thread:
 
 Bash
