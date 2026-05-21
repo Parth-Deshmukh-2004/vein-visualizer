@@ -41,17 +41,14 @@ To overcome this physical barrier, this project introduces a **distributed MLOps
 ---
 
 ## Repository Structure
-```text
-├── hardware/              # 3D chassis design models (.STL) and schematic wiring layouts
-├── edge_node/             # Scripts running on the Raspberry Pi Zero 2 W
-│   ├── capture.py         # Asynchronous camera stream processing via Picamera2
-│   ├── network_client.py  # Base64 string encoding and RESTful payload streaming
-│   └── requirements.txt   # Dependencies for the Raspberry Pi environment
-├── cloud_inference/       # Deployment scripts hosted on Hugging Face
-│   ├── app.py             # FastAPI entrypoint for processing POST requests
-│   ├── model_handler.py   # Runs inference using the Roboflow-trained weights
-│   └── Dockerfile         # Environment containerization configuration
-└── README.md              # Project documentation
+```text              
+├── hugging face             
+│   ├── app.py         
+│   ├── docker  
+│   └── requirements.txt  
+├── cloud_inference/      
+│   ├── capture.py             
+└── README.md              
 ```
 
 ## Check Installed Core Version:
